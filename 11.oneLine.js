@@ -6,9 +6,9 @@ The string should have the following format: X has a population of Y and is situ
 name, Y is the population and Z is the continent the city is situated in).
 */
 function giveInformation(obj) {
-  const { X, Y, Z } = obj;
+  const { name: X, population: Y, continent: Z } = obj;
   return `${X} has a population ${Y} and situated in ${Z}`;
 }
 const obj = { name: "Yerevan", population: 1068300, continent: "Asia" };
 
-//console.log(giveInformation(obj));
+console.log(giveInformation(obj));
